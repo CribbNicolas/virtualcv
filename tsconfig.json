@@ -1,0 +1,10 @@
+{
+  "extends": "@quasar/app/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "es5", "es6", "dom", "dom.iterable"
+  ],
+  "noImplicitAny": false,
+  }
+}
