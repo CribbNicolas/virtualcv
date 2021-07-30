@@ -12,7 +12,7 @@ export default {
 
     //Frameworks and Devtools
     fwDevt:{
-        title: 'Frameworks and Devtools',
+        title: 'Frameworks y Devtools',
         git: '1 año de experiencia. Manejo lo básico: clone, pull, push, branch, pull request.',
         docker: '1 año de experiencia. Entiendo la sitaxis de un Dockerfile, que es una imagen, container y los volumenes.',
         vue: '1 año y medio de experiencia. Estoy bastante familiarizado con vue 2 y actualmente practicando en vue 3 (esta página web). Components, transitions, slots, bind, hooks, watch, directives, lifecycle, props, methods, computed, data(), setup()',

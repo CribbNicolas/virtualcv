@@ -42,9 +42,9 @@ export const getLinksData = (t: (string: string) => string) => {
         },
         {
           title: t('linkedData.gitHub'),
-          caption: 'github.com/quasarframework',
+          caption: 'github.com/virtualcv',
           icon: 'link',
-          link: 'https://github.com/quasarframework'
+          link: 'https://github.com/CribbNicolas/virtualcv'
         },
         // {
         //   title: t('linkedData.tech'),
