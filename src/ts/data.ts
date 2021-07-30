@@ -85,7 +85,7 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.techLang.typescript'),
                         descAnimationTime: 1500,
                         img: require('../assets/img/500x500/typescript_logo.png'),
-                        stars: 2,
+                        stars: 3,
                     }, {
                         name: 'Java',
                         desc: t('knowledgeView.techLang.java'),
@@ -103,7 +103,7 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.techLang.html'),
                         descAnimationTime: 1500,
                         img: require('../assets/img/500x500/html5_logo.png'),
-                        stars: 2,
+                        stars: 3,
                     }, {
                         name: 'CSS',
                         desc: t('knowledgeView.techLang.css'),
@@ -129,7 +129,7 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.fwDevt.git'),
                         descAnimationTime: 1000,
                         img: require('../assets/img/500x500/git_logo.png'),
-                        stars: 4,
+                        stars: 3,
                     }, {
                         name: 'Docker',
                         desc: t('knowledgeView.fwDevt.docker'),
@@ -141,13 +141,13 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.fwDevt.vue'),
                         descAnimationTime: 1500,
                         img: require('../assets/img/500x500/vue_logo.png'),
-                        stars: 3,
+                        stars: 4,
                     }, {
                         name: 'Django/rest',
                         desc: t('knowledgeView.fwDevt.django'),
                         descAnimationTime: 1200,
                         img: require('../assets/img/500x500/django_logo.png'),
-                        stars: 3,
+                        stars: 2,
                     }, {
                         name: 'Quasar',
                         desc: t('knowledgeView.fwDevt.quasar'),
@@ -173,7 +173,7 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.language.spanish'),
                         descAnimationTime: 400,
                         img: '',
-                        stars: 4,
+                        stars: 5,
                     }, {
                         name: t('knowledgeView.language.english_name'),
                         desc: t('knowledgeView.language.english'),
@@ -205,19 +205,19 @@ export const KnowledgesArray = (t: (string: string) => string) => {
                         desc: t('knowledgeView.other.gimp'),
                         descAnimationTime: 1000,
                         img: require('../assets/img/500x500/gimp_logo.png'),
-                        stars: 4,
+                        stars: 3,
                     }, {
                         name: 'Gnu/Linux',
                         desc: t('knowledgeView.other.gnuLinux'),
                         descAnimationTime: 1000,
                         img: require('../assets/img/500x500/gnu-linux_logo.png'),
-                        stars: 2,
+                        stars: 3,
                     }, {
                         name: t('knowledgeView.other.ofimatic_name'),
                         desc: t('knowledgeView.other.ofimatic'),
                         descAnimationTime: 1000,
                         img: require('../assets/img/500x500/ofimatica_logo.png'),
-                        stars: 3,
+                        stars: 4,
                     },
                 ],
             color: {
