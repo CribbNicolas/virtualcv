@@ -2,6 +2,13 @@
 
 Virtual Curriculum Vitae | Nicolas Cribb
 
+## Next steps
+```bash
+  - Refactor project
+  - Solve bugs and browser compatibilities
+  - Add Backend
+```
+
 ## Install the dependencies
 ```bash
 npm install
