@@ -5,7 +5,7 @@
         <q-img v-show="showDesc && $q.screen.gt.md" :src="data.cards[indexRef].img" style="position: absolute; right: 10%; top: 35%; height: 140px; max-width: 150px" />
       </div>
       <div  class="content column items-center justify-evenly q-py-xs">
-        <div @click="disableAbilities ? '' : selectAbility(index)" v-for="(lenguage, index) in data.cards" :key="index" :style="'left:' + ((((index - Math.floor(data.cards.length / 2)) * (index - Math.ceil(data.cards.length / 3))) * 12) - 80) + 'px' " class="card row justify-around">
+        <div name='abilities' @click="disableAbilities ? '' : selectAbility(index)" v-for="(lenguage, index) in data.cards" :key="index" :style="'left:' + ((((index - Math.floor(data.cards.length / 2)) * (index - Math.ceil(data.cards.length / 3))) * 12) - 80) + 'px' " class="card row justify-around">
             <div class="ability text-grey-3 q-ma-xs">{{lenguage.name}}</div>
             <q-rating readonly size="calc(10px + 1vw)" v-model="lenguage.stars" :max="5" class='stars'/>
         </div>
@@ -100,6 +100,12 @@ export default defineComponent({
     const selectAbility = (ability: number) => {
       // Index represent a number component for a correct take of HtmlElement
       typed(document.getElementsByName('descripcion')[props.indexComp], props.data.cards[ability].desc, props.data.cards[ability].descAnimationTime)
+      const abilities = [...document.getElementsByName('knowview')[props.indexComp].children[1].children]
+      abilities.forEach((element) => {
+        element.classList.remove('ability-selected')
+      })
+      console.log(abilities[ability])
+      abilities[ability].classList.add('ability-selected')
       indexRef.value = ability
       disableAbilities.value = true
       setTimeout(() => {
@@ -214,17 +220,17 @@ $bg-color: rgb(37, 141, 118);
     text-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
   }
-  &:hover{
-    transform: scale(1.1);
-    & div{
-      text-shadow: 20px 13px 10px rgba(0, 0, 0, 0.5);
-    }
-  }
   @media (max-width: 1023px) {
     cursor: default;
   }
   @media (min-width: 1023px) {
     cursor: pointer;
+    &:hover{
+    transform: scale(1.1);
+    & div{
+      text-shadow: 20px 13px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
   }
 }
 
@@ -261,6 +267,13 @@ $bg-color: rgb(37, 141, 118);
 
 .ability{
   font-size: calc(12px + 0.6vmax);
+}
+
+.ability-selected{
+  transform: scale(1.15);
+  & div{
+      text-shadow: 25px 16px 10px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .stars{
